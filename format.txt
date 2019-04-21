@@ -1,0 +1,10 @@
+## Data format (7 bit ASCII + even parity bit)
+Row     = Decimal Data (Comment)
+--------------------------
+01 - 04 = 0102 (static in request form)
+05 - 10 = 00 0000  (badge number, yes I somehow ended up with badge # 0)
+11 - 23 = (User ID)
+24 - 41 = (Job Data)
+42 - 45 = 0319 (static in request form)
+46      = 13 (CR, carriage return)
+47      = 10 (LF, line feed)
